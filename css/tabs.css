@@ -1,0 +1,175 @@
+/* Style the tab */
+#child-themes-helper-page {
+	display:hidden;
+}
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border:none;
+  box-shadow:5px 5px 5px darkgray;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right:4px;
+  transition: 0.2s;
+  border:solid 1pt black;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  box-shadow:none;
+  border-left:solid 1pt black;
+  border-top:solid 1pt black;
+  border-right:solid 1pt black;
+  border-bottom:solid 1pt #ccc;
+}
+
+/* Style the tab content */
+#tabPage .tabcontent {
+	padding: 6px 0px 6px 10px;
+	border: none;
+	border-top: none;
+	background-color:#ccc;
+	height:calc(100% - 32px);
+	overflow-y:scroll;
+}
+.tab_inactive {
+	display: none;
+}
+.tab_active {
+	display: block;
+}
+#popupMenu {
+	position:fixed;
+	color:black;
+	background-color:white;
+	border:solid 1pt black;
+	border-radius:10px;
+	box-shadow:5px 5px 5px darkgray;
+	font-size:10pt;
+	font-weight:bold;
+	width:250px;
+	padding:5px;
+}
+.popupLinks {
+	text-decoration:none;
+	color:black;
+}
+.popupLinks:hover {
+	background-color:black;
+	color:white;
+}
+#menuFileName {
+	font-size:12pt;
+	border-bottom:ridge 1pt;
+	width:100%;
+	color:black;
+	background-color:#D0D0D0;
+	margin:0px;
+	padding:0px;
+	white-space:nowrap;
+}
+.menuP {
+	width:100%;
+	border-bottom:inset 1pt;
+	background-color:transparent;
+	margin:0px;
+	padding:0px;
+}
+.menuP:hover {
+	color:white;
+	background-color:black;
+}
+#optionsHelp {
+	font-size:12pt;
+	color:black;
+	background-color:white;
+	border:solid 1pt black;
+	border-radius:15px;
+	padding:10px 10px 40px 10px;
+	width:85%;
+
+}
+#availableActions {
+	font-size:12pt;
+	color:darkblue;
+	background-color:white;
+	padding-left:50px;
+}
+#availableActions UL {
+	font-size:12pt;
+	font-weight:bold;
+	list-style-type:disc;
+	padding-bottom:15px;
+}
+#availableActions UL.child {
+	font-size:10pt;
+	padding-top:10px;
+	list-style-type:square;
+	padding-left:30px;
+}
+.pas_cth_expertMode {
+	color:black;
+	font-size:12pt;
+	font-weight:bold;
+}
+.hideHelp {
+	display:none;
+}
+#pas_cth_options {
+	background-color:white;
+	border:solid 1pt black;
+	border-radius:15px;
+	padding:10px;
+	width:85%;
+	margin-bottom:100px;
+}
+#pas_cth_options TABLE {
+	border:solid 2pt black;
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+#pas_cth_options TD.checkbox {
+	width:50px;
+	height:50px;
+	background-color:white;
+	text-align:center;
+	border-top:dashed 2pt lightgray;
+}
+#pas_cth_options TD.data {
+	width:200px;
+	height:50px;
+	font-size:14pt;
+	background-color:white;
+	font-weight:bold;
+	text-align:center;
+	border-top:dashed 2pt lightgray;
+}
+#pas_cth_options input[type=radio] {
+	transform:scale(2.0);
+}
+#tabPage .noActiveThemeSet {
+	padding:10px;
+	width:500px;
+	height:100px;
+	border:solid 1pt;
+	border-radius:15px;
+	box-shadow:20px 10px 20px rgba(80, 80, 80, .7);
+	background-color:white;
+	color:black;
+	font-size:14pt;
+	text-align:center;
+}
